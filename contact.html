@@ -23,14 +23,53 @@
     ></script>
   </head>
   <body>
-    <div class="contact-page">
-      <div class="menu-bar">
-        <div class="logo">[vn]</div>
-        <a href="home.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </div>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">[vn]</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="projects.html"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <h1>Send me a message!</h1>
       <div class="form-container">
         <form action="/submit">
@@ -53,17 +92,17 @@
           <input type="submit" value="Send message" />
         </form>
       </div>
+      <footer>
+        <div class="left-side">
+          <div class="logo">[vn]</div>
+          <h6>Made by Vivian Nguyen © 2024</h6>
+        </div>
+        <div class="right-side">
+          <h4>vivianncodes@gmail.com</h4>
+          <i class="fa-brands fa-github" style="color: #000372"></i>
+          <i class="fa-brands fa-linkedin" style="color: #000372"></i>
+        </div>
+      </footer>
     </div>
-    <footer>
-      <div class="left-side">
-        <div class="logo">[vn]</div>
-        <h6>Made by Vivian Nguyen © 2024</h6>
-      </div>
-      <div class="right-side">
-        <h4>vivianncodes@gmail.com</h4>
-        <i class="fa-brands fa-github" style="color: #000372"></i>
-        <i class="fa-brands fa-linkedin" style="color: #000372"></i>
-      </div>
-    </footer>
   </body>
 </html>
