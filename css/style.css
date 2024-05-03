@@ -1,3 +1,15 @@
+:root {
+  --primary-color: #372e7f;
+  --secondary-color: #ff6241;
+  --accent-color: #ffc757;
+  --neutral-color: #fffade;
+}
+
+#logo {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+}
+
 h1 {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 700;
@@ -15,4 +27,15 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+nav {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.nav-color {
+  color: var(--secondary-color) !important;
 }
