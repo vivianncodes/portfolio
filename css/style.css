@@ -14,32 +14,11 @@
   font-weight: 500;
 }
 
-.homepage-1-container {
-  max-width: 1120px;
-  padding: 150px 0;
-}
-
-.homepage-2-container {
-  background-color: white;
-  border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
-  padding: 100px 60px;
-  margin: 0 auto;
-}
-
-.homepage-3-container {
-  padding: 100px 0;
-}
-
 h1 {
   color: var(--primary-color);
   font-family: "IBM Plex Mono", monospace;
   font-size: 64px;
   font-weight: 700;
-}
-
-.fw-urbanist-900 {
-  font-weight: 900;
 }
 
 h2,
@@ -62,6 +41,10 @@ body {
   font-weight: 400;
 }
 
+p {
+  font-size: 18px;
+}
+
 nav {
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
@@ -71,6 +54,43 @@ nav {
 
 .nav-color {
   color: var(--secondary-color) !important;
+}
+
+footer {
+  margin: 20px 60px;
+}
+
+.logo {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 38px;
+}
+
+.footer-email {
+  color: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HOMEPAGE */
+
+.homepage-1-container {
+  max-width: 1120px;
+  padding: 150px 0;
+}
+
+.homepage-2-container {
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
+  padding: 100px 60px;
+  margin: 0 auto;
+}
+
+.homepage-3-container {
+  margin: 100px 0;
 }
 
 .homepage-button {
@@ -166,8 +186,6 @@ nav {
   color: white;
 }
 
-/* RESPONSIVE CSS */
-
 @media (min-width: 768px) {
   .hp-contact-button {
     min-width: 120px;
@@ -175,23 +193,7 @@ nav {
   }
 }
 
-footer {
-  margin: 20px 60px;
-}
-
-.logo {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 500;
-  font-size: 38px;
-}
-
-.footer-email {
-  color: var(--secondary-color);
-}
-
-a {
-  text-decoration: none;
-}
+/* RESPONSIVE TESTING */
 
 @media (max-width: 1199px) {
   .name-intro {
@@ -231,4 +233,38 @@ a {
 }
 
 @media (max-width: 693px) {
+}
+
+/* ABOUT ME PAGE */
+.about-me {
+  margin: 100px 0;
+}
+
+.about-me h1 {
+  font-size: 45px;
+  text-align: left;
+}
+
+.certificates h2 {
+  color: var(--secondary-color);
+  margin-bottom: 35px;
+}
+
+.certificates {
+  background-color: var(--accent-color);
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
+  padding: 65px 50px;
+}
+
+.hobbies {
+  margin: 100px 0;
+}
+
+.img-1 {
+  width: 150px;
+}
+
+.img-2 {
+  width: 120px;
 }
