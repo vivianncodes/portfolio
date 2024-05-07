@@ -17,6 +17,7 @@
 h1 {
   color: var(--primary-color);
   font-family: "IBM Plex Mono", monospace;
+  font-optical-sizing: auto;
   font-size: 64px;
   font-weight: 700;
 }
@@ -73,8 +74,9 @@ footer {
 
 footer .logo {
   font-family: "IBM Plex Mono", monospace;
-  font-weight: 500;
+
   font-size: 38px;
+  font-weight: 500;
 }
 
 footer .email-link,
@@ -220,13 +222,15 @@ footer h6 {
   }
 }
 
+@media (max-width: 460px) {
+  .name-intro {
+    font-size: 40px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .homepage-2-container {
     padding: 80px 40px;
-  }
-
-  .latest-projects-description {
-    font-size: 18px;
   }
 
   .homepage-2-button {
@@ -243,7 +247,7 @@ footer h6 {
 
 @media (max-width: 767px) {
   .hp-contact-header {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .homepage-2-container {
@@ -255,7 +259,23 @@ footer h6 {
   }
 }
 
-@media (max-width: 932px) {
+@media (max-width: 575px) {
+  .homepage-2-container {
+    padding: 60px 30px;
+  }
+
+  footer .logo {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 475px) {
+  .hp-2-title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 392px) {
   .homepage-2-button {
     width: 168px;
     height: 50px;
