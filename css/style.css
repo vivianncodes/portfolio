@@ -45,6 +45,10 @@ p {
   font-size: 18px;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* NAVIGATION BAR */
 nav {
   font-family: "Urbanist", sans-serif;
@@ -62,26 +66,36 @@ a.active {
   color: var(--secondary-color);
 }
 
+/* FOOTER */
 footer {
   margin: 20px 60px;
 }
 
-.logo {
+footer .logo {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 500;
   font-size: 38px;
 }
 
-.footer-email {
+footer .email-link,
+.social-icons a {
+  color: var(--primary-color);
+  font-size: 20px;
+  margin: 10px;
+}
+
+footer .email-link:hover {
+  color: var(--secondary-color);
+}
+footer .social-icons a:hover {
   color: var(--secondary-color);
 }
 
-a {
-  text-decoration: none;
+footer h6 {
+  font-size: 12px;
 }
 
 /* HOMEPAGE */
-
 .homepage-1-container {
   max-width: 1120px;
   padding: 150px 0;
@@ -200,7 +214,6 @@ a {
 }
 
 /* RESPONSIVE TESTING */
-
 @media (max-width: 1199px) {
   .name-intro {
     font-size: 45px;
