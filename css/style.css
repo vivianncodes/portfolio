@@ -45,6 +45,7 @@ p {
   font-size: 18px;
 }
 
+/* NAVIGATION BAR */
 nav {
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
@@ -53,7 +54,12 @@ nav {
 }
 
 .nav-color {
-  color: var(--secondary-color) !important;
+  color: var(--primary-color);
+}
+
+.nav-color:hover,
+a.active {
+  color: var(--secondary-color);
 }
 
 footer {
