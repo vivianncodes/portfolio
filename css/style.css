@@ -18,7 +18,7 @@ h1 {
   color: var(--primary-color);
   font-family: "IBM Plex Mono", monospace;
   font-optical-sizing: auto;
-  font-size: 64px;
+  font-size: 45px;
   font-weight: 700;
 }
 
@@ -27,7 +27,6 @@ h3,
 body {
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
-  text-align: center;
 }
 
 h2 {
@@ -107,7 +106,7 @@ footer h6 {
   background-color: white;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
-  padding: 100px 60px;
+  padding: 80px 60px;
   margin: 0 auto;
 }
 
@@ -117,15 +116,14 @@ footer h6 {
 
 .homepage-button {
   background: var(--accent-color);
-  border: 2px solid black;
+  border: none;
   border-radius: 30px;
-  box-shadow: black 4px 4px 0 0;
   color: black;
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
   font-size: 20px;
-  padding: 0 18px;
+  padding: 0 25px;
   line-height: 50px;
   text-align: center;
   text-decoration: none;
@@ -136,14 +134,16 @@ footer h6 {
 }
 
 .homepage-button:hover {
-  background-color: var(--secondary-color);
-  color: white;
+  background-color: var(--accent-color);
+  border: none;
+  box-shadow: black 4px 5px 0 0;
+  color: black;
 }
 
 @media (min-width: 768px) {
   .homepage-button {
     min-width: 120px;
-    padding: 0 25px;
+    padding: 0 40px;
   }
 }
 
@@ -183,9 +183,8 @@ footer h6 {
 
 .hp-contact-button {
   background: var(--accent-color);
-  border: 2px solid black;
+  border: none;
   border-radius: 30px;
-  box-shadow: black 4px 4px 0 0;
   color: black;
   cursor: pointer;
   display: inline-block;
@@ -202,10 +201,10 @@ footer h6 {
 }
 
 .hp-contact-button:hover {
-  background-color: var(--secondary-color);
-  border: 2px solid black;
-  box-shadow: black 4px 4px 0 0;
-  color: white;
+  background-color: var(--accent-color);
+  border: none;
+  box-shadow: black 4px 5px 0 0;
+  color: black;
 }
 
 @media (min-width: 768px) {
@@ -219,11 +218,6 @@ footer h6 {
 .about-me {
   padding: 100px 0;
   max-width: 1120px;
-}
-
-.about-me h1 {
-  font-size: 45px;
-  text-align: left;
 }
 
 .certificates h2 {
@@ -242,20 +236,77 @@ footer h6 {
   margin: 100px 0;
 }
 
+/* PROJECTS PAGE */
+.live-demo-button {
+  background: var(--accent-color);
+  border: none;
+  border-radius: 30px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 20px;
+  padding: 0 25px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: all 150ms ease;
+}
+
+.live-demo-button:hover {
+  background-color: var(--accent-color);
+  border: none;
+  box-shadow: var(--secondary-color) 4px 4px 0 0;
+  color: var(--secondary-color);
+}
+
+.view-source-button {
+  background: white;
+  border: 0.5px solid var(--secondary-color);
+  border-radius: 30px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 20px;
+  padding: 0 25px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: all 150ms ease;
+}
+
+.view-source-button:hover {
+  background-color: white;
+  border: 0.5px solid var(--secondary-color);
+  box-shadow: var(--secondary-color) 4px 4px 0 0;
+  color: var(--secondary-color);
+}
+
+.song-generator-project .row {
+  margin-bottom: 100px;
+}
+
 /* RESPONSIVE TESTING */
 @media (min-width: 992px) {
+  .name-intro {
+    font-size: 64px;
+  }
+
   .hobby-photography img {
     height: 200px;
   }
 
   .hobbies .row {
     margin: 25px 0;
-  }
-}
-
-@media (max-width: 991px) {
-  h1 {
-    font-size: 45px;
   }
 }
 
@@ -316,6 +367,13 @@ footer h6 {
 
   .hobby-kdrama img {
     width: 250px;
+  }
+
+  .project-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
 }
 
