@@ -22,7 +22,7 @@
     ></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="background-color">
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-none container-fluid">
         <div class="container-fluid">
@@ -51,34 +51,126 @@
           </div>
         </div>
       </nav>
-      <h1>Send me a message!</h1>
-      <div class="form-container">
-        <form action="/submit">
-          <label for="name">Name (required)</label>
-          <br />
-          <label for="first-name">First name</label>
-          <input type="text" required />
-          <label for="last-name">Last name</label>
-          <input type="text" required />
-          <br />
-          <label for="email">Email (required)</label>
-          <input type="email" required />
-          <br />
-          <label for="subject">Subject (required)</label>
-          <input type="text" required />
-          <br />
-          <label for="message">Message (required)</label>
-          <input type="text" required />
-          <br />
-          <input type="submit" value="Send message" />
-        </form>
+
+      <div class="container form-container">
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <h1 class="contact-header my-5 text-center">Send me a message!</h1>
+          </div>
+
+          <div class="col-md-5 d-flex justify-content-start">
+            <img
+              src="/css/cat-box.png"
+              alt="Cat in a Box Illustrated"
+              class="cat-box"
+            />
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="form-entry">
+            <form action="/submit">
+              <div class="name-entry mb-2 text-start">
+                <label for="name"
+                  >Name <span class="opacity-50">(required)</span></label
+                >
+                <br />
+                <div class="row name-label">
+                  <div class="col">
+                    <label for="first-name">First name</label>
+                  </div>
+                  <div class="col">
+                    <label for="last-name">Last name</label>
+                  </div>
+                </div>
+                <div class="row name-input-row">
+                  <div class="col">
+                    <input type="text" name="first-name" required />
+                  </div>
+                  <div class="col">
+                    <input type="text" name="last-name" required />
+                  </div>
+                </div>
+              </div>
+
+              <div class="email-entry text-start">
+                <label for="email"
+                  >Email <span class="opacity-50">(required)</span></label
+                >
+                <br />
+                <input type="email" name="email" required />
+                <br />
+              </div>
+
+              <div class="subject-entry text-start">
+                <label for="subject"
+                  >Subject <span class="opacity-50">(required)</span></label
+                >
+                <br />
+                <input type="text" name="subject" required />
+                <br />
+              </div>
+
+              <div class="message-entry text-start">
+                <label for="message"
+                  >Message <span class="opacity-50">(required)</span></label
+                >
+                <br />
+                <textarea
+                  name="message"
+                  rows="3"
+                  style="
+                    width: 100%;
+                    border: 1px solid var(--secondary-color);
+                    border-radius: 10px;
+                    margin-top: 5px;
+                    padding: 12px;
+                  "
+                ></textarea>
+              </div>
+
+              <br />
+
+              <input
+                type="submit"
+                value="Send message"
+                class="submit-button"
+                style="
+                  display: flex;
+                  justify-content: center;
+                  background: var(--darker-accent);
+                  border: none;
+                  border-radius: 30px;
+                  color: white;
+                  cursor: pointer;
+                  display: inline-block;
+                  font-weight: bold;
+                  font-size: 20px;
+                  margin-right: 20px;
+                  padding: 0 25px;
+                  line-height: 50px;
+                  text-align: center;
+                  text-decoration: none;
+                  width: auto;
+                  user-select: none;
+                  -webkit-user-select: none;
+                  touch-action: manipulation;
+                  transition: all 150ms ease;
+                "
+              />
+            </form>
+          </div>
+        </div>
       </div>
+
+      <hr />
       <footer>
         <div class="container container-fluid">
           <div class="row align-items-center">
             <div class="col-1 justify-content-start">
               <div class="logo">[vn]</div>
             </div>
+
             <div
               class="col-11 social-icons d-inline-flex align-items-center justify-content-end"
             >
@@ -102,6 +194,7 @@
               </a>
             </div>
           </div>
+
           <div class="row">
             <div class="col">
               <h6 class="opacity-50 mt-5">Made by Vivian Nguyen © 2024</h6>

@@ -2,6 +2,8 @@
   --primary-color: #372e7f;
   --secondary-color: #ff6241;
   --accent-color: #ffc757;
+  --lighter-accent: #ffcf70;
+  --darker-accent: #ffc247;
   --neutral-color: #fffade;
 }
 
@@ -110,7 +112,7 @@ footer h6 {
 .homepage-2-container {
   background-color: white;
   border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 80px 60px;
   margin: 0 auto;
 }
@@ -154,9 +156,8 @@ footer h6 {
 
 .homepage-2-button {
   background: var(--secondary-color);
-  border: 2px solid black;
+  border: none;
   border-radius: 30px;
-  box-shadow: black 4px 4px 0 0;
   color: white;
   cursor: pointer;
   display: inline-block;
@@ -173,9 +174,9 @@ footer h6 {
 }
 
 .homepage-2-button:hover {
-  background-color: var(--primary-color);
-  border: 2px solid black;
-  box-shadow: black 4px 4px 0 0;
+  background-color: var(--secondary-color);
+  border: none;
+  box-shadow: black 4px 5px 0 0;
   color: white;
 }
 
@@ -231,9 +232,9 @@ footer h6 {
 }
 
 .certificates {
-  background-color: var(--accent-color);
+  background-color: var(--lighter-accent);
   border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 40px;
 }
 
@@ -243,7 +244,7 @@ footer h6 {
 
 /* PROJECTS PAGE */
 .live-demo-button {
-  background: var(--accent-color);
+  background: var(--lighter-accent);
   border: none;
   border-radius: 30px;
   color: var(--secondary-color);
@@ -263,7 +264,7 @@ footer h6 {
 }
 
 .live-demo-button:hover {
-  background-color: var(--accent-color);
+  background-color: var(--lighter-accent);
   border: none;
   box-shadow: var(--secondary-color) 4px 4px 0 0;
   color: var(--secondary-color);
@@ -300,14 +301,53 @@ footer h6 {
   margin-bottom: 100px;
 }
 
+/* CONTACT PAGE */
+.contact-header {
+  color: var(--secondary-color);
+  font-size: 35px;
+}
+
+.form-container {
+  max-width: 800px;
+}
+
+.form-entry {
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  margin: 0 0 100px 0;
+  padding: 50px;
+  width: 800px;
+}
+
+.form-entry input {
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  margin: 5px 0 10px 0;
+  padding: 5px 12px;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: var(--accent-color);
+  border: none;
+  box-shadow: var(--secondary-color) 4px 4px 0 0;
+  color: var(--secondary-color);
+}
+
+.cat-box {
+  position: relative;
+  width: 234px;
+  height: 179px;
+  top: 50px;
+}
+
 /* RESPONSIVE TESTING */
 @media (min-width: 992px) {
   .name-intro {
     font-size: 64px;
-  }
-
-  .hobby-photography img {
-    height: 200px;
   }
 
   .hobbies .row {
