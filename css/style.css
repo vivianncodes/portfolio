@@ -337,13 +337,6 @@ footer h6 {
   color: var(--secondary-color);
 }
 
-.cat-box {
-  position: relative;
-  width: 234px;
-  height: 179px;
-  top: 50px;
-}
-
 /* RESPONSIVE TESTING */
 @media (min-width: 992px) {
   .name-intro {
@@ -425,6 +418,13 @@ footer h6 {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+  }
+
+  .cat-box {
+    width: 266px;
+    height: auto;
+    top: 0;
+    right: 0;
   }
 }
 
