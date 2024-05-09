@@ -346,6 +346,16 @@ footer h6 {
   .hobbies .row {
     margin: 25px 0;
   }
+
+  .hobby-baking img {
+    height: auto;
+    width: 150px;
+  }
+
+  .hobby-photography img {
+    height: 225px;
+    width: auto;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -358,6 +368,10 @@ footer h6 {
     height: 50px;
     font-size: 15px;
     line-height: 20px;
+  }
+
+  .hobbies h2 {
+    margin-bottom: 35px;
   }
 
   .hobby-photography img {
@@ -423,8 +437,6 @@ footer h6 {
   .cat-box {
     width: 266px;
     height: auto;
-    top: 0;
-    right: 0;
   }
 }
 
