@@ -75,12 +75,11 @@ a.active {
 
 /* FOOTER */
 footer {
-  margin: 15px;
+  margin: 15px 0;
 }
 
 footer .logo {
   font-family: "IBM Plex Mono", monospace;
-
   font-size: 38px;
   font-weight: 500;
 }
@@ -100,7 +99,7 @@ footer .logo {
 }
 
 footer h6 {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* HOMEPAGE */
@@ -446,7 +445,7 @@ footer h6 {
   }
 
   footer .logo {
-    font-size: 28px;
+    font-size: 30px;
   }
 }
 
