@@ -1,9 +1,11 @@
 :root {
   --primary-color: #372e7f;
-  --secondary-color: #ff6241;
+  --primary-background: #665ac4;
+  --secondary-color: #ff6647;
+  --secondary-shadow: #eb4422;
   --accent-color: #ffc757;
   --lighter-accent: #ffcf70;
-  --darker-accent: #ffc247;
+  --accent-shadow: #f5a300;
   --neutral-color: #fffade;
 }
 
@@ -124,6 +126,7 @@ footer h6 {
   background: var(--accent-color);
   border: none;
   border-radius: 30px;
+  box-shadow: var(--accent-shadow) 4px 6px 0 0;
   color: black;
   cursor: pointer;
   display: inline-block;
@@ -142,8 +145,9 @@ footer h6 {
 .homepage-button:hover {
   background-color: var(--accent-color);
   border: none;
-  box-shadow: black 4px 5px 0 0;
+  box-shadow: none;
   color: black;
+  transform: translateY(3px);
 }
 
 @media (min-width: 768px) {
@@ -154,9 +158,10 @@ footer h6 {
 }
 
 .homepage-2-button {
-  background: var(--secondary-color);
+  background: var(--primary-background);
   border: none;
   border-radius: 30px;
+  box-shadow: var(--primary-color) 4px 5px 0 0;
   color: white;
   cursor: pointer;
   display: inline-block;
@@ -173,10 +178,11 @@ footer h6 {
 }
 
 .homepage-2-button:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-background);
   border: none;
-  box-shadow: black 4px 5px 0 0;
+  box-shadow: none;
   color: white;
+  transform: translateY(3px);
 }
 
 @media (min-width: 768px) {
@@ -190,6 +196,7 @@ footer h6 {
   background: var(--accent-color);
   border: none;
   border-radius: 30px;
+  box-shadow: var(--accent-shadow) 4px 6px 0 0;
   color: black;
   cursor: pointer;
   display: inline-block;
@@ -208,8 +215,9 @@ footer h6 {
 .hp-contact-button:hover {
   background-color: var(--accent-color);
   border: none;
-  box-shadow: black 4px 5px 0 0;
+  box-shadow: none;
   color: black;
+  transform: translateY(3px);
 }
 
 @media (min-width: 768px) {
@@ -243,10 +251,11 @@ footer h6 {
 
 /* PROJECTS PAGE */
 .live-demo-button {
-  background: var(--lighter-accent);
+  background: var(--accent-color);
   border: none;
   border-radius: 30px;
-  color: var(--secondary-color);
+  box-shadow: var(--accent-shadow) 4px 5px 0 0;
+  color: var(--secondary-shadow);
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
@@ -263,17 +272,19 @@ footer h6 {
 }
 
 .live-demo-button:hover {
-  background-color: var(--lighter-accent);
+  background-color: var(--accent-color);
   border: none;
-  box-shadow: var(--secondary-color) 4px 4px 0 0;
-  color: var(--secondary-color);
+  box-shadow: none;
+  color: var(--secondary-shadow);
+  transform: translateY(3px);
 }
 
 .view-source-button {
-  background: white;
-  border: 0.5px solid var(--secondary-color);
+  background: var(--primary-background);
+  border: none;
   border-radius: 30px;
-  color: var(--secondary-color);
+  box-shadow: var(--primary-color) 4px 5px 0 0;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
@@ -290,10 +301,11 @@ footer h6 {
 }
 
 .view-source-button:hover {
-  background-color: white;
-  border: 0.5px solid var(--secondary-color);
-  box-shadow: var(--secondary-color) 4px 4px 0 0;
-  color: var(--secondary-color);
+  background-color: var(--primary-background);
+  border: none;
+  box-shadow: none;
+  color: white;
+  transform: translateY(3px);
 }
 
 .song-generator-project .row {
@@ -330,10 +342,9 @@ footer h6 {
 }
 
 .submit-button:hover {
-  background-color: var(--accent-color);
   border: none;
-  box-shadow: var(--secondary-color) 4px 4px 0 0;
-  color: var(--secondary-color);
+  box-shadow: none !important;
+  transform: translateY(3px);
 }
 
 /* RESPONSIVE TESTING */
