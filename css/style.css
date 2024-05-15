@@ -276,6 +276,10 @@ footer h6 {
   margin: 100px 0;
 }
 
+.instagram {
+  color: var(--secondary-color);
+}
+
 /* PROJECTS PAGE */
 .tools-used {
   color: var(--primary-color);
