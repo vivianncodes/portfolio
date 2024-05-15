@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Vivian Nguyen</title>
+    <title>Vivian Nguyen | Front-End Developer</title>
+    <meta
+      name="description"
+      content="Vivian Nguyen is a Front-end focused developer specializing in creating simple and user-friendly digital experiences."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,17 +20,24 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/css/style.css" />
     <script
       src="https://kit.fontawesome.com/ba7644823c.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body class="background-color">
     <div class="container-sm">
       <nav class="navbar navbar-expand-lg bg-none container-fluid">
         <div class="container-fluid">
-          <a class="navbar-brand fs-1" id="logo" href="/home.html">[vn]</a>
+          <a
+            class="navbar-brand fs-1"
+            id="logo"
+            href="/home.html"
+            title="Homepage"
+            >[vn]</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -69,6 +80,7 @@
               <a
                 href="mailto:vivianncodes@gmail.com"
                 class="about-details email-link"
+                title="Email Vivian"
               >
                 vivianncodes@gmail.com
               </a>
@@ -77,12 +89,17 @@
             <div class="row">
               <div class="about-details social-links align-items-center">
                 <div class="social-icons">
-                  <a href="https://www.github.com/vivianncodes" target="_blank">
+                  <a
+                    href="https://www.github.com/vivianncodes"
+                    target="_blank"
+                    title="GitHub Profile"
+                  >
                     <i class="fa-brands fa-github fa-xl"></i>
                   </a>
                   <a
                     href="https://www.linkedin.com/in/viviannguyen58/"
                     target="_blank"
+                    title="LinkedIn Profile"
                   >
                     <i class="fa-brands fa-linkedin fa-xl"></i>
                   </a>
@@ -91,7 +108,9 @@
             </div>
           </div>
           <div class="col-md-8 ps-4">
-            <h1 class="text-start">> Hi there, I'm Vivian</h1>
+            <h1 class="text-start" id="typewrite-intro">
+              > Hi there, I'm Vivian
+            </h1>
             <h3 class="text-start fw-bold mt-4 mb-4">
               Front-End Developer based in Chicago, IL
             </h3>
@@ -121,27 +140,39 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <img
-                src="/css/about-images/certificates/Basics.png"
-                alt="SheCodes Basics Certificate"
-                class="img-fluid mb-3"
-              />
+              <a
+                href="https://www.shecodes.io/graduates/107226-vivian-nguyen"
+                target="_blank"
+                title="SheCodes Profile"
+                ><img
+                  src="/css/about-images/certificates/Basics.png"
+                  alt="SheCodes Basics Certificate"
+                  class="img-fluid mb-3"
+              /></a>
             </div>
 
             <div class="col-md-4">
-              <img
-                src="/css/about-images/certificates/Plus.png"
-                alt="SheCodes Plus Certificate"
-                class="img-fluid mb-3"
-              />
+              <a
+                href="https://www.shecodes.io/graduates/107226-vivian-nguyen"
+                target="_blank"
+                title="SheCodes Profile"
+                ><img
+                  src="/css/about-images/certificates/Plus.png"
+                  alt="SheCodes Plus Certificate"
+                  class="img-fluid mb-3"
+              /></a>
             </div>
 
             <div class="col-md-4">
-              <img
-                src="/css/about-images/certificates/AI Add-On.png"
-                alt="SheCodes AI Add-On Certificate"
-                class="img-fluid"
-              />
+              <a
+                href="https://www.shecodes.io/graduates/107226-vivian-nguyen"
+                target="_blank"
+                title="SheCodes Profile"
+                ><img
+                  src="/css/about-images/certificates/AI Add-On.png"
+                  alt="SheCodes AI Add-On Certificate"
+                  class="img-fluid"
+              /></a>
             </div>
           </div>
         </div>
@@ -159,6 +190,7 @@
                 src="/css/about-images/hobbies/girl-baking.png"
                 alt="Girl Baking Illustrated"
                 class="img-fluid"
+                title="shigureni free illust"
               />
             </div>
             <div class="col-md-8">
@@ -179,6 +211,7 @@
                 src="/css/about-images/hobbies/girl-kdrama.png"
                 alt="Girl Watching Laptop Illustrated"
                 class="img-fluid"
+                title="shigureni free illust"
               />
             </div>
             <div class="col-md-8">
@@ -199,6 +232,7 @@
                 src="/css/about-images/hobbies/girl-photography.png"
                 alt="Girl with Camera Illustrated"
                 class="img-fluid"
+                title="shigureni free illust"
               />
             </div>
             <div class="col-md-8">
@@ -218,27 +252,33 @@
       <div class="container container-fluid px-0">
         <div class="row align-items-center">
           <div class="col-1 justify-content-start">
-            <a href="home.html" class="logo text-black">[vn]</a>
+            <a href="home.html" class="logo" title="Homepage">[vn]</a>
           </div>
 
           <div
             class="col-11 social-icons d-inline-flex align-items-center justify-content-end"
           >
-            <a href="mailto:vivianncodes@gmail.com">
+            <a href="mailto:vivianncodes@gmail.com" title="Email Vivian">
               <i class="fa-solid fa-envelope fa-xl d-block d-sm-none"></i>
             </a>
             <a
               href="mailto:vivianncodes@gmail.com"
               class="email-link d-none d-sm-block"
+              title="Email Vivian"
             >
               vivianncodes@gmail.com
             </a>
-            <a href="https://www.github.com/vivianncodes" target="_blank">
+            <a
+              href="https://www.github.com/vivianncodes"
+              target="_blank"
+              title="GitHub Profile"
+            >
               <i class="fa-brands fa-github fa-xl"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/viviannguyen58/"
               target="_blank"
+              title="LinkedIn Profile"
             >
               <i class="fa-brands fa-linkedin fa-xl"></i>
             </a>
@@ -252,7 +292,16 @@
         </div>
       </div>
     </footer>
-    <script src="index.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Typewriter("#typewrite-intro", {
+          strings: "> Hi there, I'm Vivian",
+          autoStart: true,
+          delay: 100,
+          pauseFor: 3000,
+        });
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

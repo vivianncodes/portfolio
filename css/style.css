@@ -16,6 +16,11 @@
 #logo {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 500;
+  transition: all 150ms ease;
+}
+
+#logo:hover {
+  color: var(--secondary-color);
 }
 
 h1 {
@@ -73,6 +78,7 @@ nav {
 .nav-color:hover,
 a.active {
   color: var(--secondary-color);
+  transition: all 150ms ease;
 }
 
 /* FOOTER */
@@ -81,9 +87,15 @@ footer {
 }
 
 footer .logo {
+  color: black;
   font-family: "IBM Plex Mono", monospace;
   font-size: 38px;
   font-weight: 500;
+  transition: all 150ms ease;
+}
+
+footer .logo:hover {
+  color: var(--secondary-color);
 }
 
 .email-link,
@@ -91,6 +103,7 @@ footer .logo {
   color: var(--primary-color);
   font-size: 20px;
   margin: 10px;
+  transition: all 150ms ease;
 }
 
 .email-link:hover {
@@ -161,7 +174,7 @@ footer h6 {
   background: var(--primary-background);
   border: none;
   border-radius: 30px;
-  box-shadow: var(--primary-color) 4px 5px 0 0;
+  box-shadow: var(--primary-color) 4px 6px 0 0;
   color: white;
   cursor: pointer;
   display: inline-block;
@@ -190,6 +203,10 @@ footer h6 {
     min-width: 120px;
     padding: 0 25px;
   }
+}
+
+.hp-contact-header {
+  color: var(--secondary-color);
 }
 
 .hp-contact-button {
@@ -245,6 +262,16 @@ footer h6 {
   padding: 40px;
 }
 
+.certificates img {
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  transition: all 250ms ease;
+}
+
+.certificates img:hover {
+  transform: translateY(-15px);
+}
+
 .hobbies {
   margin: 100px 0;
 }
@@ -254,7 +281,7 @@ footer h6 {
   background: var(--accent-color);
   border: none;
   border-radius: 30px;
-  box-shadow: var(--accent-shadow) 4px 5px 0 0;
+  box-shadow: var(--accent-shadow) 4px 6px 0 0;
   color: var(--secondary-shadow);
   cursor: pointer;
   display: inline-block;
@@ -283,7 +310,7 @@ footer h6 {
   background: var(--primary-background);
   border: none;
   border-radius: 30px;
-  box-shadow: var(--primary-color) 4px 5px 0 0;
+  box-shadow: var(--primary-color) 4px 6px 0 0;
   color: white;
   cursor: pointer;
   display: inline-block;
@@ -345,6 +372,11 @@ footer h6 {
   border: none;
   box-shadow: none !important;
   transform: translateY(3px);
+}
+
+.cat-box:hover {
+  transform: scale(1.05, 1.05) translate(0px, -10px);
+  transition: all 250ms ease;
 }
 
 /* RESPONSIVE TESTING */
