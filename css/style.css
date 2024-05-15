@@ -277,6 +277,29 @@ footer h6 {
 }
 
 /* PROJECTS PAGE */
+.tools-used {
+  color: var(--primary-color);
+  font-size: 25px;
+  font-weight: 800;
+  text-align: start;
+}
+
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.skill {
+  background: rgba(170, 170, 170, 0.34);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 10px 0 0;
+  opacity: 0.7;
+  padding: 8px 12px;
+}
 .live-demo-button {
   background: var(--accent-color);
   border: none;
@@ -335,8 +358,8 @@ footer h6 {
   transform: translateY(3px);
 }
 
-.song-generator-project .row {
-  margin-bottom: 100px;
+#weather-app {
+  margin-bottom: 150px;
 }
 
 /* CONTACT PAGE */
@@ -397,6 +420,7 @@ footer h6 {
     font-size: 60px;
   }
 }
+
 @media (min-width: 992px) {
   .hobbies .row {
     margin: 25px 0;
@@ -410,6 +434,24 @@ footer h6 {
   .hobby-photography img {
     height: 225px;
     width: auto;
+  }
+
+  .col-lg-7 h2,
+  .col-lg-7 {
+    text-align: start;
+  }
+
+  .project-container {
+    margin: 100px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .col-lg-7,
+  .project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -436,10 +478,6 @@ footer h6 {
     height: 150px;
     width: auto;
   }
-
-  .project-container {
-    margin: 100px 0;
-  }
 }
 
 @media (min-width: 768px) {
@@ -451,12 +489,6 @@ footer h6 {
   .about-details {
     display: flex;
     justify-content: start;
-  }
-
-  .all-projects h2,
-  p {
-    text-align: start;
-    margin-bottom: 30px;
   }
 }
 
@@ -487,21 +519,6 @@ footer h6 {
 
   .hobby-kdrama img {
     width: 250px;
-  }
-
-  .project-container {
-    margin-bottom: 100px;
-  }
-
-  #song-generator {
-    margin-bottom: 175px;
-  }
-
-  .project-description {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
   }
 
   .cat-box {
