@@ -127,7 +127,7 @@ footer h6 {
   background-color: white;
   border-radius: 30px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 80px 60px;
+  padding: 70px 60px;
   margin: 0 auto;
 }
 
@@ -380,11 +380,24 @@ footer h6 {
 }
 
 /* RESPONSIVE TESTING */
-@media (min-width: 992px) {
+@media (min-width: 1201px) {
   .name-intro {
     font-size: 64px;
   }
+}
 
+@media (max-width: 1200px) {
+  .certificates {
+    padding: 25px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .name-intro {
+    font-size: 60px;
+  }
+}
+@media (min-width: 992px) {
   .hobbies .row {
     margin: 25px 0;
   }
@@ -401,15 +414,18 @@ footer h6 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .name-intro {
+    font-size: 44px;
+  }
+
   .homepage-2-container {
-    padding: 80px 40px;
+    padding: 60px 40px;
   }
 
   .homepage-2-button {
-    width: 168px;
-    height: 50px;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 10px 18px;
   }
 
   .hobbies h2 {
@@ -419,6 +435,10 @@ footer h6 {
   .hobby-photography img {
     height: 150px;
     width: auto;
+  }
+
+  .project-container {
+    margin: 100px 0;
   }
 }
 
@@ -442,7 +462,7 @@ footer h6 {
 
 @media (max-width: 767px) {
   .homepage-2-container {
-    padding: 60px 60px;
+    padding: 60px 40px;
   }
 
   .picture-icons {
@@ -469,6 +489,14 @@ footer h6 {
     width: 250px;
   }
 
+  .project-container {
+    margin-bottom: 100px;
+  }
+
+  #song-generator {
+    margin-bottom: 175px;
+  }
+
   .project-description {
     display: flex;
     flex-wrap: wrap;
@@ -480,11 +508,15 @@ footer h6 {
     width: 266px;
     height: auto;
   }
+
+  .form-entry {
+    padding: 35px;
+  }
 }
 
 @media (max-width: 575px) {
   .homepage-2-container {
-    padding: 60px 30px;
+    padding: 50px 20px;
   }
 
   footer .logo {
@@ -494,21 +526,35 @@ footer h6 {
 
 @media (min-width: 416px) and (max-width: 460px) {
   .name-intro {
-    font-size: 40px;
+    font-size: 37px;
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
+  .cat-box {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media (max-width: 383px) {
+  .hello-intro,
   .name-intro {
-    font-size: 35px;
+    font-size: 33px;
   }
 }
 
 @media (max-width: 392px) {
   .homepage-2-button {
-    width: 168px;
-    height: 50px;
     font-size: 15px;
     line-height: 20px;
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 373px) {
+  .hello-intro,
+  .name-intro {
+    font-size: 27px;
   }
 }
