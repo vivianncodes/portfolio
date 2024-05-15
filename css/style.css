@@ -558,7 +558,7 @@ footer h6 {
   }
 }
 
-@media (max-width: 383px) {
+@media (max-width: 415px) {
   .hello-intro,
   .name-intro {
     font-size: 33px;
